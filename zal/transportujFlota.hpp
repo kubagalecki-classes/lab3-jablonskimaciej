@@ -11,7 +11,7 @@ unsigned int transportujFlota(unsigned int towar)
     {
       Stocznia stocznia1{};
       Statek* s1 = stocznia1();
-      licznik_towaru = licznik_towaru + transportuj(s1);
+      licznik_towaru = licznik_towaru + s1.transportuj();
       Zaglowiec* wsk_zagl = dynamic_cast< Zaglowiec* >(s1);
       if (wsk_zagl != 0)
         licznik_zaglowcow = licznik_zaglowcow + 1; 
