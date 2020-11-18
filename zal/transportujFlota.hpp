@@ -17,5 +17,5 @@ unsigned int transportujFlota(unsigned int towar)
         licznik_zaglowcow = licznik_zaglowcow + 1; 
       delete s1;
     }
-    return 0;
+    return licznik_zaglowcow;
 }
